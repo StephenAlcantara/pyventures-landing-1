@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Py-ventures</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -15,41 +16,162 @@
   </head>
 
   <body>
-    <div id="main" class="scroll-container">
-      <section class="section1 top-section">
+    <div id="fullpage">
+      <section class="section section1 top-section">
         <div class="top">
           <div data-aos="fade-left" data-aos-duration="1000"></div>
-          <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="250"></div>
-          <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"></div>
-          <div data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="750"></div>
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="250"
+          ></div>
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          ></div>
+          <div
+            data-aos="fade-up-left"
+            data-aos-duration="1000"
+            data-aos-delay="750"
+          ></div>
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-delay="1500"
+          ></div>
           <div></div>
         </div>
       </section>
 
-      <section class="section2 middle-section">
+      <section class="section section2 middle-section">
         <div></div>
         <div></div>
       </section>
 
-      <section class="section3 bottom-section">
-        
+      <section class="section section3 bottom-section" id="bottom">
+        <h2>A CAPSTONE PROJECT OF:</h2>
+        <div class="container">
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <div class="icon"></div>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <h3>
+                  <a
+                    href="https://www.linkedin.com/in/adamdipinto/"
+                    target="_blank"
+                    >Keith Stephen Earl J. Alcantara</a
+                  >
+                </h3>
+                <p>
+                  Team and project supervision. Collaborated with every section
+                  of the group.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <div class="icon"></div>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <h3>
+                  <a
+                    href="https://www.linkedin.com/in/adamdipinto/"
+                    target="_blank"
+                    >Andre D. Causing</a
+                  >
+                </h3>
+                <p>Group Leader and back-end developer.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <div class="icon"></div>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <h3>
+                  <a
+                    href="https://www.linkedin.com/in/adamdipinto/"
+                    target="_blank"
+                    >Noemi Pia D. Dueñas</a
+                  >
+                </h3>
+                <p>Lead design and concept artist.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <div class="icon"></div>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <h3>
+                  <a
+                    href="https://www.linkedin.com/in/adamdipinto/"
+                    target="_blank"
+                    >Ralph Christian B. Passion</a
+                  >
+                </h3>
+                <p>Research documentation and content writer.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <div class="icon"></div>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <h3>
+                  <a
+                    href="https://www.linkedin.com/in/adamdipinto/"
+                    target="_blank"
+                    >Raul M. Tindogan</a
+                  >
+                </h3>
+                <p>Lead front-end developer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
 
-    <script src="https://rawgit.com/almeida-matheus/fullPageScrollPureJS/master/app/assets/javascript/full-page-scroll.js"></script>
-    <script type="text/javascript">
-      new fullScroll({
-        mainElement: "main",
-        displayDots: true,
-        dotsPosition: "right",
-        animateTime: 0.7,
-        animateFunction: "ease",
+    <script type="text/javascript" src="fullpage.js"></script>
+    <script>
+      new fullpage("#fullpage", {
+        autoScrolling: true,
+        scrollHorizontally: true,
+        navigation: true,
+        navigationPosition: "right",
+        navigationTooltips: ["Title", "Play Now", "Meet the team"],
       });
     </script>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
