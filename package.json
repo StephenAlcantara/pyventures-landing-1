@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "aos": "^2.3.4",
+    "fullpage.js": "^4.0.12"
+  }
+}
