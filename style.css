@@ -31,7 +31,8 @@ body {
   height: 50%;
 
   position: absolute;
-  right: -25%;
+  top: 0;
+  right: -30%;
 }
 
 .top div:nth-of-type(2) {
