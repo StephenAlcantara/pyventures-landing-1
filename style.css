@@ -172,7 +172,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #f00;
   transition: 0.7s;
   z-index: 1;
   border-radius: 25px 25px 25px 25px;
@@ -183,7 +182,9 @@ body {
 }
 
 .card:nth-child(1) .icon {
-  background: #e07768;
+  background-image: url('assets/keith.png');
+  background-position: 50% 25%;
+  background-size: cover;
 }
 
 .card:nth-child(2) .icon {
@@ -195,11 +196,13 @@ body {
 }
 
 .card:nth-child(4) .icon {
-  background: #ad4a8f;
+  background-image: url('assets/ralph.jpeg');
+  background-position: 50% 25%;
+  background-size: cover;
 }
 
 .card:nth-child(5) .icon {
-  background: #9bad4a;
+  background: ;
 }
 
 
@@ -237,6 +240,13 @@ body {
   border-radius: 25px 25px 0 0;
 }
 
+.card:hover .face.face1{
+  transform: translateY(0px);
+  
+  background: #fff;
+  border-radius: 25px 25px 0 0;
+}
+
 .card .face.face1 .content {
   opacity: 1;
   transition: 0.5s;
@@ -252,7 +262,6 @@ body {
 
 .card .face.face2 {
   position: relative;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,6 +272,28 @@ body {
   border-radius: 25px 25px 25px 25px;
 }
 
+.card:nth-child(1) .face.face2 {
+  background: rgb(222, 91, 91);
+}
+
+.card:nth-child(2) .face.face2 {
+  background: rgb(91, 172, 222);
+}
+
+.card:nth-child(3) .face.face2 {
+  background: #4aada9;
+}
+
+.card:nth-child(4) .face.face2 {
+  background: #9bad4a;
+}
+
+.card:nth-child(5) .face.face2 {
+  background: #ad4aa6;
+}
+
+
+
 .card:hover .face.face2{
   transform: translateY(0);
   border-radius: 0 0 25px 25px;
@@ -272,7 +303,8 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  color: #414141;
+  color: #fff;
+  text-shadow: #000 1px 1px;
   font-size: .85rem;
 }
 
@@ -281,11 +313,11 @@ body {
   padding: 0;
   color: #fff;
   text-align: center;
-  color: #414141;
   font-size: 1.2rem;
 } 
 
 .card a {
   text-decoration: none;
-  color: #414141;
+  color: #fff;
+  text-shadow: #000 1px 1px;
 }
