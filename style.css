@@ -101,6 +101,7 @@ body {
   background-size: cover;
   overflow: hidden;
 
+  position: relative;
   display: flex;
 }
 
@@ -188,7 +189,9 @@ body {
 }
 
 .card:nth-child(2) .icon {
-  background: #6eadd4;
+  background-image: url('assets/andre.jpg');
+  background-position: 50% 25%;
+  background-size: cover;
 }
 
 .card:nth-child(3) .icon {
